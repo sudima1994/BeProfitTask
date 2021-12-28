@@ -26,7 +26,7 @@ if($data){
     // Create a new table for the data if not already created.
     $db->createTable('orders', $keys);
     // Save the data to the DB.
-    // saveDataToDB($data, 'orders');
+    saveDataToDB($data, 'orders');
     $net_sales = getNetSales();
     echo "The net sales of the provided orders is: ". number_format($net_sales, 2, '.', '') . "<br>";
     $production_costs = getProductionCosts();
